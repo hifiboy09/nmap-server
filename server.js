@@ -9,7 +9,7 @@ app.post("/scan", (req, res) => {
 
   if (!target) return res.send("Target missing");
 
-  const nmap = spawn("nmap", ["-sV", target]);
+  const nmap = const nmap = spawn("nmap", ["-sT", "-sV", target]);
 
   let output = "";
 
